@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,12 +36,15 @@
         >
         <nav class="nav">
           <ul class="list nav-list">
-            <li><a class="link nav-link nav-link-current" href="./index.html">Студия</a></li>
-            <li><a class="link nav-link nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link nav-link" href="">Контакты</a></li>
+            <li><a class="link nav-link nav-link-current" href="./index.html">Студія</a></li>
+            <li><a class="link nav-link nav-link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="list contact-list">
+          <li class="link">
+            <a href=""></a>
+          </li>
           <li>
             <a class="link header-link" lang="en" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -57,10 +60,10 @@
     <main class="main">
       <!-- Hero -->
 
-      <section class="main-section">
+      <section class="overlay main-section">
         <div class="conteiner">
-          <h1 class="main-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn btn-mode-blue" type="button">Заказать услугу</button>
+          <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn btn-mode-blue" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -68,30 +71,30 @@
 
       <section class="about-section">
         <div class="conteiner">
-          <h2 class="visually-hidden">Особенности</h2>
+          <h2 class="visually-hidden">Особливості</h2>
           <ul class="list about-list">
             <li class="about-item">
-              <h3 class="about-item-title">Внимание к деталям</h3>
+              <h3 class="about-item-title">Увага до деталей</h3>
               <p class="about-item-text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="about-item">
-              <h3 class="about-item-title">Пунктуальность</h3>
+              <h3 class="about-item-title">Пунктуальність</h3>
               <p class="about-item-text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="about-item">
-              <h3 class="about-item-title">Планирование</h3>
+              <h3 class="about-item-title">Планування</h3>
               <p class="about-item-text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="about-item">
-              <h3 class="about-item-title">Современные технологии</h3>
+              <h3 class="about-item-title">Сучасні технології</h3>
               <p class="about-item-text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -102,7 +105,7 @@
 
       <section class="Specification">
         <div class="conteiner">
-          <h2 class="Specification-title">Чем мы занимаемся</h2>
+          <h2 class="Specification-title">Чим ми займаємося</h2>
           <ul class="list Specification-list">
             <li class="img specification-img">
               <img src="./images/pic1.jpg" alt="Фото1" width="370" height="294" />
@@ -132,7 +135,7 @@
                 height="260"
               />
               <div class="teem-names">
-                <h3 class="teem-name-title">Игорь Демьяненко</h3>
+                <h3 lang="ru" class="teem-name-title">Игорь Демьяненко</h3>
                 <p lang="en" class="teem-text">Product Designe</p>
               </div>
             </li>
@@ -145,7 +148,7 @@
                 height="260"
               />
               <div class="teem-names">
-                <h3 class="teem-name-title">Ольга Репина</h3>
+                <h3 lang="ru" class="teem-name-title">Ольга Репина</h3>
                 <p lang="en" class="teem-text">Frontend Develope</p>
               </div>
             </li>
@@ -158,7 +161,7 @@
                 height="260"
               />
               <div class="teem-names">
-                <h3 class="teem-name-title">Николай Тарасов</h3>
+                <h3 lang="ru" class="teem-name-title">Николай Тарасов</h3>
                 <p lang="en" class="teem-text">Marketing</p>
               </div>
             </li>
@@ -171,7 +174,7 @@
                 height="260"
               />
               <div class="teem-names">
-                <h3 class="teem-name-title">Михаил Ермаков</h3>
+                <h3 lang="ru" class="teem-name-title">Михаил Ермаков</h3>
                 <p lang="en" class="teem-text">UI Designer</p>
               </div>
             </li>
@@ -185,10 +188,10 @@
     <footer class="footer">
       <div class="conteiner">
         <a class="link footer-logo" lang="en" href="./index.html"
-          >Web<span class="footer-logo-cl">Studio</span></a
+          >Web<span lang="en" class="footer-logo-cl">Studio</span></a
         >
         <address class="address">
-          <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+          <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
           <a class="link footer-link" lang="en" href="mailto:info@example.com">info@example.com</a>
           <a class="link footer-tel" href="tel:+380961111111">+38 099 111 11 11</a>
         </address>

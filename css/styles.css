@@ -18,6 +18,9 @@
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /* Reset styles */
@@ -165,8 +168,13 @@ img {
 /* Hero */
 
 .main-section {
-  background: var(--dark-bg-cl);
+  background-color: var(--dark-bg-cl);
+   background-image: url(../images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
