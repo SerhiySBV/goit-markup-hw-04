@@ -67,10 +67,12 @@ img {
 .btn:hover {
   color: var(--main-white);
   background-color: var(--accent-txt-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .btn:focus {
   color: var(--main-white);
   background-color: var(--accent-txt-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* header  */
@@ -117,11 +119,12 @@ img {
 }
 
 .nav-link:hover,
-.nav-link:focus,
+ .nav-link:focus,
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-txt-cl);
 }
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-txt-cl);
@@ -162,7 +165,23 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+}
+.phone-icon,
+.letter-icon {
+  margin-right: 10px;
+}
+.letter-link
+ {
+    margin-right: 30px;
+}
+.phone-link,
+.letter-link {
+  display: flex;
+}
+.phone-icon,
+.letter-icon {
+  fill: currentColor;
 }
 /* Hero */
 .main-section {
@@ -551,7 +570,7 @@ img {
 .cliens-link:hover {
   fill: var(--accent-txt-cl);
   border-color: var(--accent-txt-cl);
-}
+  }
 
 /* Portfolio */
 
@@ -594,6 +613,7 @@ img {
 .portfolio-section {
   padding: 94px 0;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -602,6 +622,7 @@ img {
 .portfolio-item {
   display: list-item;
   min-width: 370px;
+  border: 1px rgba(238, 238, 238, 1);
 }
 .description {
   padding: 20px 24px;
@@ -612,3 +633,11 @@ img {
 .portfolio-title {
   margin-bottom: 4px;
 }
+.description {
+  display: block;
+}
+ .portfolio-item:hover,
+ .portfolio-item:focus {
+  display: block;  
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
