@@ -5,11 +5,13 @@
   /* Text colors */
   --main-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
+
   /* bg colors */
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
   --light-bg-portfolio-cl: #eeeeee;
   --main-white: #ffffff;
+  --icons-color: #afb1b8;
   /* Others */
 }
 
@@ -18,9 +20,6 @@
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
-   max-width: 1600px;
-   margin-left: auto;
-   margin-right: auto;
 }
 
 /* Reset styles */
@@ -166,13 +165,23 @@ img {
   gap: 50px;
 }
 /* Hero */
-
 .main-section {
-  background-color: var(--dark-bg-cl);
-   background-image: url(../images/Hero.jpg);
+  background-color: #c4c4c4;
+}
+/* Overlay */
+
+.overlay {
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero.jpg);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-section {
@@ -260,7 +269,31 @@ img {
 .about-item-title {
   margin-bottom: 10px;
 }
+
+/* Icons */
+.about-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.about-item:nth-child(1)::before {
+  background-image: url(../images/icons/edit-icon/antenna.svg);
+}
+.about-item:nth-child(2)::before {
+  background-image: url(../images/icons/edit-icon/clock.svg);
+}
+.about-item.about-item:nth-child(3)::before {
+  background-image: url(../images/icons/edit-icon/diagram.svg);
+}
+.about-item.about-item:nth-child(4)::before {
+  background-image: url(../images/icons/edit-icon/astronaut.svg);
+}
 /* Specification */
+
 .Specification {
   padding-bottom: 94px;
 }
@@ -299,6 +332,9 @@ img {
 }
 .teem-link {
   background-color: var(--main-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .teem-name-title {
   font-weight: 500;
@@ -314,6 +350,7 @@ img {
   font-size: 16px;
   line-height: 1.19em;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 /* Block decoration */
 .teem-section {
@@ -337,9 +374,78 @@ img {
   text-align: center;
 }
 
+/* Teem-social */
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-white);
+  fill: var(--icons-color);
+}
+.social-item {
+  border-radius: 50%;
+}
+.social-link:focus,
+.social-link:hover {
+  border-radius: 50%;
+  background-color: var(--accent-txt-cl);
+  fill: var(--main-white);
+}
+
 /* Footer */
 
+/* Conect */
+.footer-conect-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-info {
+  padding-right: 70px;
+}
+.footer-block {
+  display: flex;
+  gap: 70px;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-link-icon {
+  fill: var(--main-white);
+  background-color: #ffffff1a;
+}
+.footer-link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-link-icon:focus,
+.footer-link-icon:hover {
+  border-radius: 50%;
+  background-color: var(--accent-txt-cl);
+  fill: var(--main-white);
+}
 /* Text decoration */
+
 /*Footer logo */
 .footer {
   background: #2f303a;
@@ -402,6 +508,49 @@ img {
 .footer-link {
   display: block;
   margin-bottom: 9px;
+}
+
+/* Our client */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.cliens-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--main-white);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icons-color);
+}
+.cliens-icon {
+  fill: var(--icons-color);
+}
+.cliens-link:focus,
+.cliens-link:hover {
+  fill: var(--accent-txt-cl);
+  border-color: var(--accent-txt-cl);
 }
 
 /* Portfolio */
